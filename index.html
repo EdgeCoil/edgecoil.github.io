@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>edgecoil</title>
+<meta name="description" content="edgecoil — integrated technology solutions. Open hardware and software for the connected home.">
+<meta name="theme-color" content="#13202a">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate: #13202a;
+    --slate-2: #1b2c38;
+    --line: #2a3d4b;
+    --cream: #ece6d8;
+    --muted: rgba(236, 230, 216, 0.72);
+    --cu: #e48b4b;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--slate);
+    color: var(--cream);
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: var(--cu); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  .wrap { width: 100%; max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+  header.wrap { padding-top: 72px; padding-bottom: 56px; text-align: center; }
+  .mark { width: min(280px, 70vw); height: auto; display: block; margin: 0 auto 8px; }
+  h1 {
+    font-weight: 600;
+    font-size: clamp(56px, 13vw, 104px);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin: 0;
+  }
+  .tagline {
+    font-weight: 500;
+    font-size: clamp(11px, 2.4vw, 15px);
+    letter-spacing: 0.24em;
+    color: var(--muted);
+    margin: 14px 0 0;
+  }
+  .lede { max-width: 34em; margin: 36px auto 0; color: var(--muted); font-size: 18px; }
+
+  section.wrap { padding-top: 8px; padding-bottom: 64px; }
+  h2 {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--cu);
+    margin: 0 0 20px;
+  }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .card h3 { font-weight: 600; font-size: 19px; margin: 0 0 8px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  footer {
+    margin-top: auto;
+    border-top: 1px solid var(--line);
+    padding: 24px 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="mark" src="/mark.svg" alt="" width="960" height="650">
+  <h1>edgecoil</h1>
+  <p class="tagline">INTEGRATED TECHNOLOGY SOLUTIONS</p>
+  <p class="lede">Open hardware and software for the connected home — boards, firmware and the small pieces that tie them together.</p>
+</header>
+
+<section class="wrap" aria-labelledby="projects">
+  <h2 id="projects">Projects</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Wiegand Bridge</h3>
+      <p>ESP32-S3 Wiegand reader bridge for Home Assistant: a 4-layer board, BOM and ESPHome firmware.</p>
+    </article>
+    <article class="card">
+      <h3>Tune Button</h3>
+      <p>Two-button BLE remote that likes or playlists the current Spotify song through a companion Android app.</p>
+    </article>
+    <article class="card">
+      <h3>Ring Inbox</h3>
+      <p>Receive Index 01 ring webhooks and act on spoken phrases: a guide, a reference receiver and tests.</p>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>edgecoil</span>
+    <a href="https://github.com/EdgeCoil">github.com/EdgeCoil</a>
+  </div>
+</footer>
+</body>
+</html>
